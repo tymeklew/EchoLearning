@@ -1,0 +1,20 @@
+[package]
+name = "learning-project"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+async-std = { version = "1.12.0", features = ["attributes", "tokio1"] }
+bcrypt = "0.15.0"
+diesel = { version = "2.1.1", features = ["time"] }
+diesel-async = { version = "0.4.1", features = ["bb8", "mysql", "mobc"] }
+dotenv = "0.15.0"
+handlebars = "4.4.0"
+lettre = { version = "0.10.4", features = ["tokio1", "tokio1-native-tls"] }
+rand = "0.8.5"
+serde = { version = "1.0.188", features = ["derive"] }
+tide = "0.16.0"
+time = "0.3.28"
+uuid = { version = "1.4.1", features = ["v4"] }
